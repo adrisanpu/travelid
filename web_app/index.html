@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />  <!-- Completaaaar! -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Travelid"
+      content="The best way of enjoying a safety travel"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <title>Travelid</title>
+  </head>
+  <body>
+
+
+  <div class="container">
+    <header class=home>
+      <h2><a href="#" id="title_link"><i class="fas fa-globe-europe"></i> Travelid</a></h2>
+      <nav id="reg_log_button">
+        <a class="btn" id="button_login_register_screen">Register/Log In</a>
+      </nav>
+    </header>
+
+    <div class="cover" id="ini_screen">
+      <h1>The best way of enjoying a safety travel</h1>
+      <form  class="flex-form">
+        <label for="from">
+          <i class="fas fa-map-marker-alt"></i>
+        </label>
+        <input type="text" placeholder="Where do you want to go?" id="country" name="country">
+        <input type="submit" value="Search" id="button_search">Search</input>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="row" id="data">
+    <div class="column left">
+      <h2>Forum</h2>
+      <div id="insert_comm">
+        <form>
+          <label>Add your comment: </label><br>
+          <textarea name="comment_box" id="comment_textbox" rows="4" cols="50"></textarea><br>
+          <button id="button_comment">Publish</button>
+        </form>
+
+        </div>
+        <div id="forum">
+        <!-- aqui van els comentaris -->
+
+        </div>
+      </div>
+    <div class="column right datacol">
+      <h1 id = "name">Country</h2>
+      <h2 id = "continent">Continent</h2>
+      <p>Population density: </p><p id = "pop_density"></p><p> people per &#13218;</p><br>
+      <p>% Positive Rate: </p><p id = "pos_rate"></p><meter id="pos_rate_meter" value="0" min="0" max="100"></meter><br>
+      <p>New Cases Per Million: </p><p id = "n_cases_pm"></p><meter id="n_cases_pm_meter" value="0" min="0" max="1000000"></meter><br>
+      <p>New Deaths Per Million: </p><p id = "n_deaths_pm"></p><meter id="n_deaths_pm_meter" value="0" min="0" max="1000000"></meter><br>
+      <p>% People Vaccinated: </p><p id = "percent_vaccin"></p><meter id="percent_vaccin_meter" value="0" min="0" max="100"></meter><br>
+      <p>Stringency Index</p><p id = "stringency"></p><meter id="stringency_meter" value="0" min="0" max="100"></meter><br>
+    </div>
+
+
+
+  </div>
+
+  <div class="login" id="register_login_screen">
+     <form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+      <h1 class="a11y-hidden">Login Form</h1>
+      <div>
+        <label class="label-username">
+          <span class="required">Username:</span>
+          <input type="username" class="text" name="username" placeholder="Username" tabindex="1" id="username"required />
+
+        </label>
+      </div>
+      <div>
+        <label class="label-password">
+          <span class="required">Password:</span>
+          <input type="password" class="text" name="password" placeholder="Password" tabindex="2" id="password" required />
+
+        </label>
+      </div>
+      <div class="log">
+        <button class="login-button" type="submit" id="button_register">Register</button>
+        <button class= "login-button" type="submit" id="button_login">Log in </button>
+      </div>
+
+
+    </form>
+
+  </div>
+
+
+<script src="./index.js"></script>
+      </body>
+    </html>
